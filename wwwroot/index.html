@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item List</title>
+    <script>
+        async function loadItems() {
+            const response = await fetch('/api/items');
+            const items = await response.json();
+            const list = document.getElementById('items');
+            list.innerHTML = ''; // Limpa o conteúdo da lista antes de adicionar novos itens
+
+            // Loop para adicionar cada item na lista HTML
+            items.forEach(item => {
+                const li = document.createElement('li');
+                li.innerHTML = `
+                    <h2>Question: ${item.question}</h2>
+                    <ul>
+                        <li>Option 1: ${item.option1}</li>
+                        <li>Option 2: ${item.option2}</li>
+                        <li>Option 3: ${item.option3}</li>
+                        <li>Option 4: ${item.option4}</li>
+                        <li>Option 5: ${item.option5}</li>
+                    </ul>
+                    
+                `;
+                list.appendChild(li); // Adiciona o item à lista
+            });
+        }
+    </script>
+</head>
+<body onload="loadItems()">
+    <h1>Items</h1>
+    <ul id="items"></ul>
+</body>
+</html>
