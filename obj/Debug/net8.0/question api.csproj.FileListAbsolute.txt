@@ -72,10 +72,91 @@ C:\Users\w10\source\repos\question api\obj\Debug\net8.0\staticwebassets\msbuild.
 C:\Users\w10\source\repos\question api\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.question api.props
 C:\Users\w10\source\repos\question api\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.question api.props
 C:\Users\w10\source\repos\question api\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\w10\source\repos\question api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\w10\source\repos\question api\obj\Debug\net8.0\question.0176C9AF.Up2Date
 C:\Users\w10\source\repos\question api\obj\Debug\net8.0\question api.dll
 C:\Users\w10\source\repos\question api\obj\Debug\net8.0\refint\question api.dll
 C:\Users\w10\source\repos\question api\obj\Debug\net8.0\question api.pdb
 C:\Users\w10\source\repos\question api\obj\Debug\net8.0\question api.genruntimeconfig.cache
 C:\Users\w10\source\repos\question api\obj\Debug\net8.0\ref\question api.dll
+C:\Users\w10\source\repos\question api\obj\Debug\net8.0\question api.sourcelink.json
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\appsettings.json
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\question api.staticwebassets.runtime.json
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\question api.staticwebassets.endpoints.json
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\question api.exe
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\question api.deps.json
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\question api.runtimeconfig.json
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\question api.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\question api.pdb
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\Microsoft.Data.Sqlite.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\SQLitePCLRaw.core.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\runtimes\browser-wasm\nativeassets\net8.0\e_sqlite3.a
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\runtimes\linux-musl-s390x\native\libe_sqlite3.so
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\runtimes\linux-s390x\native\libe_sqlite3.so
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\w10\Documents\projects\question api\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\w10\Documents\projects\question api\obj\Debug\net8.0\question api.csproj.AssemblyReference.cache
+C:\Users\w10\Documents\projects\question api\obj\Debug\net8.0\question api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\w10\Documents\projects\question api\obj\Debug\net8.0\question api.AssemblyInfoInputs.cache
+C:\Users\w10\Documents\projects\question api\obj\Debug\net8.0\question api.AssemblyInfo.cs
+C:\Users\w10\Documents\projects\question api\obj\Debug\net8.0\question api.csproj.CoreCompileInputs.cache
+C:\Users\w10\Documents\projects\question api\obj\Debug\net8.0\question api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\w10\Documents\projects\question api\obj\Debug\net8.0\question api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\w10\Documents\projects\question api\obj\Debug\net8.0\question api.sourcelink.json
+C:\Users\w10\Documents\projects\question api\obj\Debug\net8.0\scopedcss\bundle\question api.styles.css
+C:\Users\w10\Documents\projects\question api\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\w10\Documents\projects\question api\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\w10\Documents\projects\question api\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\w10\Documents\projects\question api\obj\Debug\net8.0\staticwebassets\msbuild.question api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\w10\Documents\projects\question api\obj\Debug\net8.0\staticwebassets\msbuild.question api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\w10\Documents\projects\question api\obj\Debug\net8.0\staticwebassets\msbuild.build.question api.props
+C:\Users\w10\Documents\projects\question api\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.question api.props
+C:\Users\w10\Documents\projects\question api\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.question api.props
+C:\Users\w10\Documents\projects\question api\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\w10\Documents\projects\question api\obj\Debug\net8.0\question.0176C9AF.Up2Date
+C:\Users\w10\Documents\projects\question api\obj\Debug\net8.0\question api.dll
+C:\Users\w10\Documents\projects\question api\obj\Debug\net8.0\refint\question api.dll
+C:\Users\w10\Documents\projects\question api\obj\Debug\net8.0\question api.pdb
+C:\Users\w10\Documents\projects\question api\obj\Debug\net8.0\question api.genruntimeconfig.cache
+C:\Users\w10\Documents\projects\question api\obj\Debug\net8.0\ref\question api.dll

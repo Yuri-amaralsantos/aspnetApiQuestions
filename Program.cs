@@ -1,40 +1,37 @@
 using Microsoft.EntityFrameworkCore;
-using question_api.Data; // Certifique-se de usar o namespace correto para AppDbContext
+using question_api.Data; // Ensure you're using the correct namespace for AppDbContext
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Adicionar serviços ao contêiner
+// Add services to the container
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Configurar o Entity Framework com SQLite
+// Configure Entity Framework with SQLite
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlite("Data Source=Database/app.db"));
+    options.UseSqlite("Data Source=app.db")); // Direct path without 'Database/' folder
 
 var app = builder.Build();
 
-// Criar banco de dados automaticamente (opcional, mas recomendado para desenvolvimento)
+// Ensure the database is created automatically
 using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    dbContext.Database.EnsureCreated(); // Garante que o banco de dados será criado se não existir
+    dbContext.Database.EnsureCreated(); // Ensures SQLite database exists
 }
 
-// Configuração de middleware
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
-app.UseStaticFiles();
+// Middleware pipeline configuration
 app.UseRouting();
 app.UseAuthorization();
 
-// Mapear controladores
+// Map controllers
 app.MapControllers();
 
-// Iniciar a aplicação
 app.Run();

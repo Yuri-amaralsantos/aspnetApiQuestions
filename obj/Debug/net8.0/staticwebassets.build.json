@@ -1,125 +1,12 @@
 {
   "Version": 1,
-  "Hash": "VZGCRxdpad2FNsUGX7qoVxQxrUhG9PWNvyhDeRJ0KHY=",
+  "Hash": "NR/9hKDyT1Qk2OhmMu2GhoaEoxp5+DiHWGRwgZKnDfQ=",
   "Source": "question api",
   "BasePath": "_content/question api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [
-    {
-      "Name": "question api\\wwwroot",
-      "Source": "question api",
-      "ContentRoot": "C:\\Users\\w10\\source\\repos\\question api\\wwwroot\\",
-      "BasePath": "_content/question api",
-      "Pattern": "**"
-    }
-  ],
-  "Assets": [
-    {
-      "Identity": "C:\\Users\\w10\\source\\repos\\question api\\wwwroot\\index.html",
-      "SourceId": "question api",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\w10\\source\\repos\\question api\\wwwroot\\",
-      "BasePath": "_content/question api",
-      "RelativePath": "index#[.{fingerprint}]?.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "42t8d8xk62",
-      "Integrity": "HKLUkbwnM84+iONi6vQQMphTXD1+Spro+mwo5WSho2A=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\index.html"
-    }
-  ],
-  "Endpoints": [
-    {
-      "Route": "index.42t8d8xk62.html",
-      "AssetFile": "C:\\Users\\w10\\source\\repos\\question api\\wwwroot\\index.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "781"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"HKLUkbwnM84+iONi6vQQMphTXD1+Spro+mwo5WSho2A=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 02 Dec 2024 21:52:35 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "42t8d8xk62"
-        },
-        {
-          "Name": "label",
-          "Value": "index.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-HKLUkbwnM84+iONi6vQQMphTXD1+Spro+mwo5WSho2A="
-        }
-      ]
-    },
-    {
-      "Route": "index.html",
-      "AssetFile": "C:\\Users\\w10\\source\\repos\\question api\\wwwroot\\index.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "781"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"HKLUkbwnM84+iONi6vQQMphTXD1+Spro+mwo5WSho2A=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 02 Dec 2024 21:52:35 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-HKLUkbwnM84+iONi6vQQMphTXD1+Spro+mwo5WSho2A="
-        }
-      ]
-    }
-  ]
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
 }
