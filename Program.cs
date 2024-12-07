@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using question_api.Data; // Ensure you're using the correct namespace for AppDbContext
+using question_api;
 
 var builder = WebApplication.CreateBuilder(args);
 

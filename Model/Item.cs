@@ -1,14 +1,32 @@
-﻿namespace question_api.Models
+﻿using question_api.Enums;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace question_api.Model
 {
-    public class Item
+#pragma warning disable
+
+    public class Questoes
     {
-         public Guid Id { get; set; }
-        public string? Question { get; set; }
-        public string? Option1 { get; set; }
-        public string? Option2 { get; set; }
-        public string? Option3 { get; set; }
-        public string? Option4 { get; set; }
-        public string? Option5 { get; set; }
+
+        public Guid Id { get; set; }
+
+        [Required]
+        public string Question { get; set; }
+        [Required]
+        public string Option1 { get; set; }
+        [Required]
+        public string Option2 { get; set; }
+        [Required]
+        public string Option3 { get; set; }
+        [Required]
+        public string Option4 { get; set; }
+        [Required]
+        public string Option5 { get; set; }
+        [Required]
         public int CorrectAnswer { get; set; }
+
+        //[NotMapped]
+        //public NivelDificuldade NivelDificuldade { get; set; }
     }
 }

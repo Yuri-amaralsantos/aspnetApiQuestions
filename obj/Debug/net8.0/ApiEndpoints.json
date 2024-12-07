@@ -18,8 +18,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "item",
-        "Type": "question_api.Models.Item",
+        "Name": "newItem",
+        "Type": "question_api.Model.Item",
         "IsRequired": true
       }
     ],
@@ -27,15 +27,57 @@
   },
   {
     "ContainingType": "question_api.Controllers.ItemsController",
-    "Method": "GetItem",
+    "Method": "UpdateItem",
     "RelativePath": "api/Items/{id}",
-    "HttpMethod": "GET",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.Int32",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedItem",
+        "Type": "question_api.Model.Item",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "question_api.Controllers.ItemsController",
+    "Method": "PartialUpdateItem",
+    "RelativePath": "api/Items/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "partialUpdate",
+        "Type": "question_api.Model.Item",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "question_api.Controllers.ItemsController",
+    "Method": "DeleteItem",
+    "RelativePath": "api/Items/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],

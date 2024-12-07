@@ -1,13 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using question_api.Models;
+using question_api.Model;
 
-namespace question_api.Data
+namespace question_api
 {
     public class AppDbContext : DbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         // Define DbSets for your entities
-        public DbSet<Item> Items { get; set; } // Example entity
+        public DbSet<Questoes> QuestoesAnonimas { get; set; } // Example entity
     }
 }

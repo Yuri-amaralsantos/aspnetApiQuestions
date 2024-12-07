@@ -1,16 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using question_api.Data;
-using question_api.Models;
+using question_api.Model;
 
 namespace question_api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class ItemsController : ControllerBase
+    public class QuestoesAnomController : ControllerBase
     {
         private readonly AppDbContext _context;
 
-        public ItemsController(AppDbContext context)
+        public QuestoesAnomController(AppDbContext context)
         {
             _context = context;
         }
@@ -19,19 +18,25 @@ namespace question_api.Controllers
         [HttpGet]
         public IActionResult GetItems()
         {
-            var items = _context.Items.ToList();
-            return Ok(items);
+
         }
+
+
+
+
+
+
+
 
         // POST: api/items
         [HttpPost]
-        public IActionResult AddItem([FromBody] Item newItem)
+        public IActionResult AddItem([FromBody] Questoes newItem)
         {
             if (newItem == null)
                 return BadRequest("Invalid item data.");
 
             newItem.Id = Guid.NewGuid(); // Generate a new ID
-            _context.Items.Add(newItem);
+            _context.QuestoesAnonimas.Add(newItem);
             _context.SaveChanges();
 
             return CreatedAtAction(nameof(GetItems), new { id = newItem.Id }, newItem);
@@ -39,12 +44,12 @@ namespace question_api.Controllers
 
         // PUT: api/items/{id}
         [HttpPut("{id}")]
-        public IActionResult UpdateItem(Guid id, [FromBody] Item updatedItem)
+        public IActionResult UpdateItem(Guid id, [FromBody] Questoes updatedItem)
         {
             if (id != updatedItem.Id)
                 return BadRequest("ID mismatch.");
 
-            var existingItem = _context.Items.Find(id);
+            var existingItem = _context.QuestoesAnonimas.Find(id);
             if (existingItem == null)
                 return NotFound();
 
@@ -57,7 +62,7 @@ namespace question_api.Controllers
             existingItem.Option5 = updatedItem.Option5;
             existingItem.CorrectAnswer = updatedItem.CorrectAnswer;
 
-            _context.Items.Update(existingItem);
+            _context.QuestoesAnonimas.Update(existingItem);
             _context.SaveChanges();
 
             return NoContent();
@@ -65,9 +70,9 @@ namespace question_api.Controllers
 
         // PATCH: api/items/{id}
         [HttpPatch("{id}")]
-        public IActionResult PartialUpdateItem(Guid id, [FromBody] Item partialUpdate)
+        public IActionResult PartialUpdateItem(Guid id, [FromBody] Questoes partialUpdate)
         {
-            var existingItem = _context.Items.Find(id);
+            var existingItem = _context.QuestoesAnonimas.Find(id);
             if (existingItem == null)
                 return NotFound();
 
@@ -87,7 +92,7 @@ namespace question_api.Controllers
             if (partialUpdate.CorrectAnswer != 0)
                 existingItem.CorrectAnswer = partialUpdate.CorrectAnswer;
 
-            _context.Items.Update(existingItem);
+            _context.QuestoesAnonimas.Update(existingItem);
             _context.SaveChanges();
 
             return NoContent();
@@ -97,11 +102,11 @@ namespace question_api.Controllers
         [HttpDelete("{id}")]
         public IActionResult DeleteItem(Guid id)
         {
-            var existingItem = _context.Items.Find(id);
+            var existingItem = _context.QuestoesAnonimas.Find(id);
             if (existingItem == null)
                 return NotFound();
 
-            _context.Items.Remove(existingItem);
+            _context.QuestoesAnonimas.Remove(existingItem);
             _context.SaveChanges();
 
             return NoContent();
