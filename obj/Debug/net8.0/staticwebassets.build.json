@@ -1,12 +1,11 @@
 {
   "Version": 1,
-  "Hash": "NR/9hKDyT1Qk2OhmMu2GhoaEoxp5+DiHWGRwgZKnDfQ=",
-  "Source": "question api",
-  "BasePath": "_content/question api",
+  "Hash": "AxCrU9N7LUxhwJbGq++xRS8pNEriZtZbcJW8SuzvM4I=",
+  "Source": "question_api",
+  "BasePath": "_content/question_api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }
