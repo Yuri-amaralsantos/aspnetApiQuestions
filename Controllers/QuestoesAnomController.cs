@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using question_api.Model;
+using question_api.Interfaces;
 
 namespace question_api.Controllers
 {
@@ -7,30 +7,46 @@ namespace question_api.Controllers
     [Route("api/[controller]")]
     public class QuestoesAnomController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly IQuestionServices _questionServices;
 
-        public QuestoesAnomController(AppDbContext context)
+        public QuestoesAnomController(IQuestionServices questionServices)
         {
-            _context = context;
+            _questionServices = questionServices;
         }
 
         // GET: api/items
         [HttpGet]
-        public IActionResult GetItems()
+        public async  Task<IActionResult> GetItems()
         {
+            var questions = await _questionServices.GetRandomQuestionsAsync();
 
+            return Ok(questions);
         }
 
 
 
 
 
+        //Comentei todos os outros metodos para não dar conflito e focar no GET, se for trabalhar nos outros metodos pode descomentar.
+
+        // Eu tirei o context daqui, eu acho melhor acessar o banco a partir dos Services, no caso a classe QuestionService. Se precisar trabalhar nos outros
+        //metodos, move a lógica de acesso a dados pra lá pros services e cria um metodo pra eles, assim como fiz com o GET.
+
+
+
+
+
+
+
+
+
+        /*
 
 
 
         // POST: api/items
         [HttpPost]
-        public IActionResult AddItem([FromBody] Questoes newItem)
+        public IActionResult AddItem([FromBody] Question newItem)
         {
             if (newItem == null)
                 return BadRequest("Invalid item data.");
@@ -44,7 +60,7 @@ namespace question_api.Controllers
 
         // PUT: api/items/{id}
         [HttpPut("{id}")]
-        public IActionResult UpdateItem(Guid id, [FromBody] Questoes updatedItem)
+        public IActionResult UpdateItem(Guid id, [FromBody] Question updatedItem)
         {
             if (id != updatedItem.Id)
                 return BadRequest("ID mismatch.");
@@ -54,7 +70,7 @@ namespace question_api.Controllers
                 return NotFound();
 
             // Update the item's properties
-            existingItem.Question = updatedItem.Question;
+            existingItem.Prompt = updatedItem.Prompt;
             existingItem.Option1 = updatedItem.Option1;
             existingItem.Option2 = updatedItem.Option2;
             existingItem.Option3 = updatedItem.Option3;
@@ -70,15 +86,15 @@ namespace question_api.Controllers
 
         // PATCH: api/items/{id}
         [HttpPatch("{id}")]
-        public IActionResult PartialUpdateItem(Guid id, [FromBody] Questoes partialUpdate)
+        public IActionResult PartialUpdateItem(Guid id, [FromBody] Question partialUpdate)
         {
             var existingItem = _context.QuestoesAnonimas.Find(id);
             if (existingItem == null)
                 return NotFound();
 
             // Update only non-null properties
-            if (!string.IsNullOrEmpty(partialUpdate.Question))
-                existingItem.Question = partialUpdate.Question;
+            if (!string.IsNullOrEmpty(partialUpdate.Prompt))
+                existingItem.Prompt = partialUpdate.Prompt;
             if (!string.IsNullOrEmpty(partialUpdate.Option1))
                 existingItem.Option1 = partialUpdate.Option1;
             if (!string.IsNullOrEmpty(partialUpdate.Option2))
@@ -111,5 +127,9 @@ namespace question_api.Controllers
 
             return NoContent();
         }
+
+
+
+        */
     }
 }

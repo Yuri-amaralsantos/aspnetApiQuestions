@@ -6,13 +6,13 @@ namespace question_api.Model
 {
 #pragma warning disable
 
-    public class Questoes
+    public class Question
     {
 
         public Guid Id { get; set; }
 
         [Required]
-        public string Question { get; set; }
+        public string Prompt { get; set; }
         [Required]
         public string Option1 { get; set; }
         [Required]

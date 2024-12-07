@@ -1,7 +1,9 @@
-﻿namespace question_api.Interfaces
+﻿using question_api.Model;
+
+namespace question_api.Interfaces
 {
-    public interface QuestionServices
+    public interface IQuestionServices
     {
-        //public List<T> GetRandomQuestions();
+        public Task<List<Question>> GetRandomQuestionsAsync();
     }
 }

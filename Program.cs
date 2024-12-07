@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using question_api;
+using question_api.Interfaces;
+using question_api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +12,14 @@ builder.Services.AddSwaggerGen();
 
 // Configure Entity Framework with SQLite
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlite("Data Source=app.db")); // Direct path without 'Database/' folder
+    options.UseSqlite("Data Source=app.db"));
+
+
+//Injeção de dependencia
+
+builder.Services.AddScoped(typeof(IQuestionServices), typeof(QuestionServices));
+builder.Services.AddTransient(typeof(AppDbContext));
+
 
 var app = builder.Build();
 
